@@ -79,9 +79,9 @@ h6 {
 }
 
 body {
-	font-size: 18px;
+	font-size: 22px;
 	font-weight: 600;
-	color: #757575;
+	color: #000;
 	background: #F6F5F4;
 	font-family: 'Montserrat', sans-serif;
 	letter-spacing: -0.04em;
@@ -91,3 +91,47 @@ body {
 		max-width: 1920px;
 		margin: 0 auto;
 	}
+
+.bayan__title {
+	margin-top: 20px;
+	font-size: 42px;
+	text-align: center;
+}
+
+.accordion {
+	max-width: 500px;
+	margin: 30px auto;
+}
+
+.accordion__item {
+	border-bottom: 1px solid #757575;
+	margin-bottom: 2px;
+}
+
+.accordion__title {
+	padding: 20px 0px;
+	display: block;
+	cursor: pointer;
+}
+
+.accordion__title:hover {
+	color:blue;
+	transition: all .3s ease-out;
+}
+
+.accordion__content {
+	display: none;
+	padding: 10px 0px;
+}
+
+.accordion__input {
+	width: 0;
+	height: 0;
+	position: absolute;
+	appearance: none;
+}
+
+
+.accordion__input:checked + .accordion__content {
+	display: block;
+}
